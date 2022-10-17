@@ -1,0 +1,30 @@
+﻿@model IEnumerable<LojaWeb.Models.Produto>
+
+
+
+<h6>@ViewData["Data"]</h6>
+<div>
+    <h2>@ViewData["Titulo"]</h2>                                                                              
+</div>
+<hr />
+<h3>@ViewBag.Total @ViewBag.TotalProdutos</h3>
+<hr />
+<button type="button" class="btn btn-outline-primary" asp-controller="Produto" asp-action="Create">Criar Novo Produto</button>
+
+
+<div class="container">
+    <div class="row">
+
+    @foreach (var produto in Model)
+    {
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <h4>@produto.Nome</h4>
+            <p><img src="@produto.ImagemUrl" /></p>
+            <p>Descrição : @produto.DescricaoCurta</p>
+            <h3>Preço : @produto.Preco.ToString("c")</h3>
+            
+        </div>
+    }
+
+</div>
+</div>

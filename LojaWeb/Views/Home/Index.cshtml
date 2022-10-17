@@ -1,0 +1,14 @@
+﻿@using LojaWeb.ViewModel
+@model HomeViewModel
+
+<h1>ABC ELETRODOS SOLDAS E ABRASIVOS</h1>
+<partial name="_Carrousel" />
+
+<h2>Os produtos preferidos da semana :</h2>
+
+<div class="row"
+    @foreach(var produto in Model.ProdutosPreferidos)
+    {
+        <partial name="_ProdutosResumo" for="@produto"/>
+    }
+    </div>
