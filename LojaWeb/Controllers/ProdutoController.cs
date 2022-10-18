@@ -1,36 +1,55 @@
 ﻿using LojaWeb.Models;
 using LojaWeb.Repositories.Interfaces;
-
+using LojaWeb.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LojaWeb.Controllers
 {
     public class ProdutoController : Controller
     {
-        private readonly ApplicationContext _context;
-
-
-
         private readonly IProdutoRepository _produtoRepository;
-
-        public ProdutoController(IProdutoRepository produtoRepository, ApplicationContext context)
+        public ProdutoController(IProdutoRepository produtoRepository)
         {
             _produtoRepository = produtoRepository;
-            _context = context;
         }
 
-        public IActionResult List()
+        public IActionResult List(string categoria)
         {
-            ViewData["Titulo"] = "Todos Os Produtos";
-            ViewData["Data"] = DateTime.Now;
-            var produtos = _produtoRepository.Produtos;
-            var totalprodutos = produtos.Count();
-            ViewBag.Total = "Total De Produtos";
-            ViewBag.TotalProdutos = totalprodutos;
-            return View(produtos);
+            IEnumerable<Produto> produtos;
+            string categoriaAtual = string.Empty;
+
+            if (string.IsNullOrEmpty(categoria))
+            {
+                produtos = _produtoRepository.Produtos.OrderBy(l => l.ProdutoId);
+                categoriaAtual = "Todos os Produtos";
+            }
+            else
+            {
+                produtos = _produtoRepository.Produtos
+                    .Where(l => l.Categoria.CategoriaName.Equals(categoria))
+                    .OrderBy(c => c.Nome);
+
+              
+                categoriaAtual = categoria;
+            }
+
+            var produtosListViewModel = new ProdutosListViewModel
+            {
+                Produtos = produtos,
+                CategoriaAtual = categoriaAtual
+            };
+
+            return View(produtosListViewModel);
+        }
+
+        public IActionResult Details(int produtoId)
+        {
+            var produto= _produtoRepository.Produtos.FirstOrDefault(l => l.ProdutoId == produtoId);
+            return View(produto);
         }
     }
 }
-       
+
+
 
 

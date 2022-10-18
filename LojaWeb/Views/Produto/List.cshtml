@@ -1,21 +1,21 @@
-﻿@model IEnumerable<LojaWeb.Models.Produto>
+﻿@model ProdutosListViewModel
 
 
 
 <h6>@ViewData["Data"]</h6>
 <div>
-    <h2>@ViewData["Titulo"]</h2>                                                                              
+    <h2>@Model.CategoriaAtual</h2>                                                                              
 </div>
 <hr />
 <h3>@ViewBag.Total @ViewBag.TotalProdutos</h3>
 <hr />
-<button type="button" class="btn btn-outline-primary" asp-controller="Produto" asp-action="Create">Criar Novo Produto</button>
+
 
 
 <div class="container">
     <div class="row">
 
-    @foreach (var produto in Model)
+    @foreach (var produto in Model.Produtos)
     {
         <div class="col-sm-4 col-md-4 col-lg-4">
             <h4>@produto.Nome</h4>
@@ -28,3 +28,4 @@
 
 </div>
 </div>
+
