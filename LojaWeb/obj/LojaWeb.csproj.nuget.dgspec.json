@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Uwarow\\Desktop\\loja\\LojaWeb\\LojaWeb.csproj": {}
+    "C:\\Users\\Uwarow\\Desktop\\LojaWeb\\LojaWeb\\LojaWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Uwarow\\Desktop\\loja\\LojaWeb\\LojaWeb.csproj": {
+    "C:\\Users\\Uwarow\\Desktop\\LojaWeb\\LojaWeb\\LojaWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Uwarow\\Desktop\\loja\\LojaWeb\\LojaWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Uwarow\\Desktop\\LojaWeb\\LojaWeb\\LojaWeb.csproj",
         "projectName": "LojaWeb",
-        "projectPath": "C:\\Users\\Uwarow\\Desktop\\loja\\LojaWeb\\LojaWeb.csproj",
+        "projectPath": "C:\\Users\\Uwarow\\Desktop\\LojaWeb\\LojaWeb\\LojaWeb.csproj",
         "packagesPath": "C:\\Users\\Uwarow\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Uwarow\\Desktop\\loja\\LojaWeb\\obj\\",
+        "outputPath": "C:\\Users\\Uwarow\\Desktop\\LojaWeb\\LojaWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.10, )"
@@ -61,6 +65,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.10, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

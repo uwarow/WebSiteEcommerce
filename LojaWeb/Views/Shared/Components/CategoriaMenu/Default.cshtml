@@ -1,8 +1,8 @@
 ﻿
 <div class="dropdown">
 
-    <a class="btn btn-secondary dropdown-toggle" role="button"
-       id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="btn btn-secondary dropdown-toggle " role="button"
+       id="dropdownMenuLink" style="color :white" data-bs-toggle="dropdown" aria-expanded="false" >
         Produtos
     </a>
 
@@ -10,14 +10,14 @@
         @foreach (var categoria in Model)
         {
             <li>
-                <a class="dropdown-item" asp-controller="Produto" asp-action="List" style="color:black"
+                <a class="dropdown-item" asp-controller="Produto" asp-action="List" style="color:white"
                asp-route-categoria="@categoria.CategoriaName">@categoria.CategoriaName</a>
             </li>
         }
         <li class="dropdown-divider"></li>
         <li>
             <a class="dropdown-item" asp-controller="Produto" asp-action="List" asp-route-categoria=""
-               style="color:black"></a>
+               style="color:white">Todos Os Produtos</a>
         </li>
     </ul>
 

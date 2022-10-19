@@ -4,7 +4,7 @@
 
 namespace LojaWeb.Migrations
 {
-    public partial class First : Migration
+    public partial class IDentityUssers : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

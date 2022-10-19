@@ -1,4 +1,4 @@
-﻿using LojaWeb.Migrations;
+﻿
 using LojaWeb.Models;
 
 namespace LojaWeb.ViewModel
