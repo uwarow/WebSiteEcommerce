@@ -7,6 +7,7 @@ using CarrinhoCompra = LojaWeb.Models.CarrinhoCompra;
 
 namespace LojaWeb.Controllers
 {
+    
     public class CarrinhoCompraController : Controller
     {
         private readonly IProdutoRepository _produtoRepository;
@@ -20,7 +21,7 @@ namespace LojaWeb.Controllers
 
         public IActionResult Index()
         {
-            var itens = _carrinhoCompra.GetCarrinhoCompraItems();
+            var itens = _carrinhoCompra.GetCarrinhoCompraItens();
             _carrinhoCompra.CarrinhoCompraItens = itens;
 
             var carrinhoCompraVM = new CarrinhoCompraViewModel

@@ -6,6 +6,6 @@ namespace LojaWeb.Repositories.Interfaces
     {
         IEnumerable<Produto> Produtos { get; }
         IEnumerable<Produto> ProdutosPreferidos { get; }
-       Produto GetProdutoById(int produtoId);
+        Produto GetLancheById(int produtoId);
     }
 }

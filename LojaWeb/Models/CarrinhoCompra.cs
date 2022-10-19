@@ -76,14 +76,13 @@ namespace LojaWeb.Models
         }
 
 
-        public List<CarrinhoCompraItem> GetCarrinhoCompraItems()
+        public List<CarrinhoCompraItem> GetCarrinhoCompraItens()
         {
             return CarrinhoCompraItens ??
-                (CarrinhoCompraItens =
-                _context.CarrinhoCompraItens
-                .Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
-                .Include(s => s.Produto)
-                .ToList());
+                   (CarrinhoCompraItens =
+                       _context.CarrinhoCompraItens.Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
+                           .Include(s => s.Produto)
+                           .ToList());
         }
 
         public void LimparCarrinho()
@@ -95,8 +94,7 @@ namespace LojaWeb.Models
         }
         public decimal GetCarrinhoCompraTotal()
         {
-            var total = _context.CarrinhoCompraItens
-                .Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
+            var total = _context.CarrinhoCompraItens.Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
                 .Select(c => c.Produto.Preco * c.Quantidade).Sum();
             return total;
         }

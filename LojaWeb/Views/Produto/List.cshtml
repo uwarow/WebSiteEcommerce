@@ -2,7 +2,7 @@
 
 
 
-<h6>@ViewData["Data"]</h6>
+<h6>@Model.CategoriaAtual</h6>
 <div>
     <h2>@Model.CategoriaAtual</h2>                                                                              
 </div>
@@ -14,18 +14,9 @@
 
 <div class="container">
     <div class="row">
-
-    @foreach (var produto in Model.Produtos)
-    {
-        <div class="col-sm-4 col-md-4 col-lg-4">
-            <h4>@produto.Nome</h4>
-            <p><img src="@produto.ImagemUrl" /></p>
-            <p>Descrição : @produto.DescricaoCurta</p>
-            <h3>Preço : @produto.Preco.ToString("c")</h3>
-            
-        </div>
-    }
-
+        @foreach (var produto in Model.Produtos)
+        {
+            <partial name="_ProdutosResumo" for="@produto" />
+        }
+    </div>
 </div>
-</div>
-

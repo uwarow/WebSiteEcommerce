@@ -47,8 +47,31 @@ namespace LojaWeb.Controllers
             var produto= _produtoRepository.Produtos.FirstOrDefault(l => l.ProdutoId == produtoId);
             return View(produto);
         }
+        public ViewResult Search(string searchString)
+        {
+            string _searchString = searchString;
+            IEnumerable<Produto> produtos;
+            string currentCategory = string.Empty;
+
+            if (string.IsNullOrEmpty(_searchString))
+            {
+                produtos = _produtoRepository.Produtos.OrderBy(p => p.ProdutoId);
+            }
+            else
+            {
+                produtos = _produtoRepository.Produtos.Where(p => p.Nome.ToLower().Contains(_searchString.ToLower()));
+            }
+
+            return View("~/Views/Produto/List.cshtml", new ProdutosListViewModel
+            {
+                Produtos = produtos,
+                CategoriaAtual = "Todos os Produtos"
+            });
+        }
+
     }
 }
+    
 
 
 

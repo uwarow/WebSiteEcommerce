@@ -9781,25 +9781,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fe657\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Uwarow\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fe657\\source\\repos\\LojaWeb\\LojaWeb\\LojaWeb.csproj",
+      "projectUniqueName": "C:\\Users\\Uwarow\\Desktop\\loja\\LojaWeb\\LojaWeb.csproj",
       "projectName": "LojaWeb",
-      "projectPath": "C:\\Users\\fe657\\source\\repos\\LojaWeb\\LojaWeb\\LojaWeb.csproj",
-      "packagesPath": "C:\\Users\\fe657\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fe657\\source\\repos\\LojaWeb\\LojaWeb\\obj\\",
+      "projectPath": "C:\\Users\\Uwarow\\Desktop\\loja\\LojaWeb\\LojaWeb.csproj",
+      "packagesPath": "C:\\Users\\Uwarow\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Uwarow\\Desktop\\loja\\LojaWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\fe657\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Uwarow\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -9808,7 +9806,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

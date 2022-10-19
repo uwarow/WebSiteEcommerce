@@ -8,9 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationContext>(options =>
-options.UseSqlServer("Database=localhost;Initial Catalog= WebSiteLoja1;UID=root;Integrated Security=SSPI"));
+options.UseSqlServer("Database=localhost;Initial Catalog= LojaOnline;UID=root;Integrated Security=SSPI"));
 builder.Services.AddTransient<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
 builder.Services.AddMemoryCache();
 builder.Services.AddSession();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -39,6 +40,8 @@ app.UseEndpoints(endpoints =>
        name: "categoriaFiltro",
        pattern: "Produto/{action}/{categoria?}",
        defaults: new { Controller = "Produto", action = "List" });
+
+    
 
     endpoints.MapControllerRoute(
         name: "default",

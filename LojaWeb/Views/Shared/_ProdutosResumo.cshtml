@@ -15,9 +15,8 @@
 
     <div>
         <p class="button">
-            <a class="btn btn-primary" id="cartButton" asp-controller="CarrinhoCompra"
-               asp-action="AdicionarItemNoCarrinhoCompra" asp-route-LancheId="@Model.ProdutoId">
-                Incluir no Carrinho
+            <a class="btn btn-primary" id="cartButton" asp-controller="CarrinhoCompra" asp-action="AdicionarItemNoCarrinhoCompra" asp-route-produtoId="@Model.ProdutoId">
+                Adicionar @Model.Nome ao carrinho
             </a>
         </p>
     </div>
