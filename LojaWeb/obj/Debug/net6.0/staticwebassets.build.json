@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AU0d/ZxRi87tkIQQ0TIote7NTzI9s2TSPMoOxeWttMc=",
+  "Hash": "dsBkFvUGkOiCV/PrN0uhbIA+E0hRz27fMp7HBDdbd9s=",
   "Source": "LojaWeb",
   "BasePath": "_content/LojaWeb",
   "Mode": "Default",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\icons8-login-64.png"
+    },
+    {
+      "Identity": "C:\\Users\\Uwarow\\Desktop\\LojaWeb\\LojaWeb\\wwwroot\\images\\ImagensProdutos\\download.png",
+      "SourceId": "LojaWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Uwarow\\Desktop\\LojaWeb\\LojaWeb\\wwwroot\\",
+      "BasePath": "_content/LojaWeb",
+      "RelativePath": "images/ImagensProdutos/download.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ImagensProdutos\\download.png"
     },
     {
       "Identity": "C:\\Users\\Uwarow\\Desktop\\LojaWeb\\LojaWeb\\wwwroot\\images\\ImagensProdutos\\furadeira_parafusadeira_de_impacto_1_2_18v_gsb_180_li_bosch_90795621_c9cf_600x600.jpg",

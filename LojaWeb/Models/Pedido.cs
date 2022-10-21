@@ -56,7 +56,7 @@ namespace LojaWeb.Models
 
         [ScaffoldColumn(false)]
         [Display(Name = "Itens no Pedido")]
-        public int TotalItensPedido { get; set; }
+        public int? TotalItensPedido { get; set; }
 
         [Display(Name = "Data do Pedido")]
         [DataType(DataType.Text)]

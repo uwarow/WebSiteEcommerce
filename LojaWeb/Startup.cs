@@ -1,4 +1,5 @@
 
+using LojaWeb.Areas.Admin.Services;
 using LojaWeb.Models;
 using LojaWeb.Repositories;
 using LojaWeb.Repositories.Interfaces;
@@ -35,7 +36,7 @@ namespace LojaWeb
                  .AddDefaultTokenProviders();
 
             services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/Home/AccessDenied");
-
+            services.Configure<ConfigurationImagens>(Configuration.GetSection("ConfigurationPastaImagens"));
             
 
             //fornece uma instancia de HttpContextAcessor
@@ -45,7 +46,7 @@ namespace LojaWeb
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
             services.AddTransient<IPedidoRepository, PedidoRepository>();
             services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
-            
+            services.AddScoped<RelatorioVendasService>();
             
 
             //cria um objeto Scoped, ou seja um objeto que esta associado a requisição

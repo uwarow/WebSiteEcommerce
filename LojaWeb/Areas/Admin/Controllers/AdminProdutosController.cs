@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using LojaWeb.Models;
 using Microsoft.AspNetCore.Authorization;
 using System.Data;
+using ReflectionIT.Mvc.Paging;
 
 namespace LojaWeb.Areas.Admin.Controllers
 {
@@ -23,10 +24,22 @@ namespace LojaWeb.Areas.Admin.Controllers
         }
 
         // GET: Admin/AdminProdutos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Nome")
         {
-            var applicationContext = _context.Produtos.Include(p => p.Categoria);
-            return View(await applicationContext.ToListAsync());
+            var resultado = _context.Produtos.Include(l => l.Categoria)
+                           .AsQueryable();
+
+
+            if (!string.IsNullOrWhiteSpace(filter))
+            {
+                resultado = resultado.Where(p => p.Nome.Contains(filter));
+            }
+
+            var model = await PagingList.CreateAsync(resultado, 5, pageindex, sort, "Nome");
+
+            model.RouteValue = new RouteValueDictionary { { "filter", filter } };
+
+            return View(model);
         }
 
         // GET: Admin/AdminProdutos/Details/5

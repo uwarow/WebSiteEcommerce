@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\LojaWeb",
+    "\\LojaWeb\\Areas",
+    "\\LojaWeb\\Areas\\Admin",
+    "\\LojaWeb\\Areas\\Admin\\Controllers",
+    "\\LojaWeb\\Areas\\Admin\\Views",
+    "\\LojaWeb\\Areas\\Admin\\Views\\Admin",
+    "\\LojaWeb\\Controllers"
   ],
   "SelectedNode": "\\LojaWeb.sln",
   "PreviewInSolutionExplorer": false
