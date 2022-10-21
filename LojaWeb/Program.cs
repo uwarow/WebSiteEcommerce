@@ -3,7 +3,7 @@ using LojaWeb;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace LanchesMac
+namespace LojaWeb
 {
     public class Program
     {
