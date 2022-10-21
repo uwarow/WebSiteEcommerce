@@ -18,8 +18,7 @@ namespace LojaWeb.Models
         [Display(Name = ("Descricao"))]
         public string Descricao { get; set; }
 
-        [Column("CategoriaId")]
-        [Display(Name = ("Código Categoria"))]
-        public List<Produto> Produtos { get; set; }
+        
+        public List<Produto>? Produtos { get; set; }
     }
 }

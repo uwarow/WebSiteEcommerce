@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LanchesMac.Controllers
+namespace LojaWeb.Controllers
 {
     [Authorize]
     public class AccountController : Controller
@@ -61,7 +61,7 @@ namespace LanchesMac.Controllers
             return View();
         }
 
-
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(LoginViewModel registroVM)
@@ -85,8 +85,6 @@ namespace LanchesMac.Controllers
             return View(registroVM);
         }
 
-
-
         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Logout()
@@ -95,6 +93,11 @@ namespace LanchesMac.Controllers
             HttpContext.User = null;
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }

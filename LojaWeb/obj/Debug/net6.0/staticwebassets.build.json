@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TQUe4DDwbH3tBzoqFTCNiCNLgpsWW5yP5o5396MP3PY=",
+  "Hash": "AU0d/ZxRi87tkIQQ0TIote7NTzI9s2TSPMoOxeWttMc=",
   "Source": "LojaWeb",
   "BasePath": "_content/LojaWeb",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Uwarow\\Desktop\\LojaWeb\\LojaWeb\\wwwroot\\images\\71-hOACYLjL._AC_SX569_.jpg",
+      "SourceId": "LojaWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Uwarow\\Desktop\\LojaWeb\\LojaWeb\\wwwroot\\",
+      "BasePath": "_content/LojaWeb",
+      "RelativePath": "images/71-hOACYLjL._AC_SX569_.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\71-hOACYLjL._AC_SX569_.jpg"
     },
     {
       "Identity": "C:\\Users\\Uwarow\\Desktop\\LojaWeb\\LojaWeb\\wwwroot\\images\\carousel11.jpg",
