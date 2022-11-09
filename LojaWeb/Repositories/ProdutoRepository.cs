@@ -18,7 +18,7 @@ namespace LojaWeb.Repositories
 
         public IEnumerable<Produto> ProdutosPreferidos => _context.Produtos.Where(p => p.IsProdutosPreferidos).Include(c => c.Categoria);
 
-        public Produto GetLancheById(int produtoId) => _context.Produtos.FirstOrDefault(l => l.ProdutoId == produtoId);
+        public Produto GetProdutoById(int produtoId) => _context.Produtos.FirstOrDefault(l => l.ProdutoId == produtoId);
     }
 }
 

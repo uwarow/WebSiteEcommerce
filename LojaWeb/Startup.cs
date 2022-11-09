@@ -29,7 +29,7 @@ namespace LojaWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationContext>(options =>
-              options.UseSqlServer("Database=localhost;Initial Catalog= LojaOnline9;UID=root;Integrated Security=SSPI"));
+              options.UseSqlServer("Database=localhost;Initial Catalog= EcommerceOficial;UID=root;Integrated Security=SSPI"));
 
             services.AddIdentity<IdentityUser, IdentityRole>()
                  .AddEntityFrameworkStores<ApplicationContext>()
@@ -87,6 +87,7 @@ namespace LojaWeb
 
             seedUserRoleInitial.SeedRoles();
             seedUserRoleInitial.SeedUsers();
+            
 
             app.UseSession();
 
@@ -100,8 +101,8 @@ namespace LojaWeb
                     pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
 
                 endpoints.MapControllerRoute(name: "categoriaFiltro",
-                   pattern: "Lanche/{action}/{categoria?}",
-                   defaults: new { Controller = "Lanche", action = "List" });
+                   pattern: "Produto/{action}/{categoria?}",
+                   defaults: new { Controller = "Produto", action = "List" });
 
                 endpoints.MapControllerRoute(
                     name: "default",

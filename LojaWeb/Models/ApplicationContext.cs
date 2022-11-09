@@ -6,6 +6,10 @@ namespace LojaWeb.Models
 {
     public class ApplicationContext : IdentityDbContext<IdentityUser>
     {
+        public ApplicationContext()
+        {
+        }
+
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {
             Database.EnsureCreated();

@@ -19,6 +19,7 @@ namespace LojaWeb.Controllers
             _signInManager = signInManager;
         }
 
+
         [AllowAnonymous]
         public IActionResult Login(string returnUrl)
         {
@@ -85,12 +86,12 @@ namespace LojaWeb.Controllers
             return View(registroVM);
         }
 
-        [AllowAnonymous]
+        public ViewResult LoggedIn() => View();
+
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Logout()
         {
-            HttpContext.Session.Clear();
-            HttpContext.User = null;
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
