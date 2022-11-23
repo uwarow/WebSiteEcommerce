@@ -2207,3 +2207,10 @@ C:\Users\fe657\Source\Repos\LojaWeb1\LojaWeb\obj\Debug\net6.0\scopedcss\projectb
 C:\Users\fe657\Source\Repos\LojaWeb1\LojaWeb\obj\Debug\net6.0\LojaWeb.csproj.CopyComplete
 C:\Users\fe657\Source\Repos\LojaWeb1\LojaWeb\obj\Debug\net6.0\LojaWeb.genruntimeconfig.cache
 C:\Users\fe657\Source\Repos\LojaWeb1\LojaWeb\obj\Debug\net6.0\ref\LojaWeb.dll
+C:\Users\fe657\Source\Repos\LojaWeb1\LojaWeb\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+C:\Users\fe657\Source\Repos\LojaWeb1\LojaWeb\bin\Debug\net6.0\EntityFramework.dll
+C:\Users\fe657\Source\Repos\LojaWeb1\LojaWeb\obj\Debug\net6.0\staticwebassets\msbuild.LojaWeb.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\fe657\Source\Repos\LojaWeb1\LojaWeb\obj\Debug\net6.0\staticwebassets\msbuild.build.LojaWeb.props
+C:\Users\fe657\Source\Repos\LojaWeb1\LojaWeb\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LojaWeb.props
+C:\Users\fe657\Source\Repos\LojaWeb1\LojaWeb\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LojaWeb.props
+C:\Users\fe657\Source\Repos\LojaWeb1\LojaWeb\obj\Debug\net6.0\staticwebassets.pack.json

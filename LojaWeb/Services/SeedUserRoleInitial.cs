@@ -45,7 +45,7 @@ namespace LojaWeb.Services
                     user.LockoutEnabled = false;
                     user.SecurityStamp = Guid.NewGuid().ToString();
 
-                    IdentityResult result = _userManager.CreateAsync(user, "Numsey#2022").Result;
+                    IdentityResult result = _userManager.CreateAsync(user, "T-systems#").Result;
 
                     if (result.Succeeded)
                     {
@@ -64,7 +64,7 @@ namespace LojaWeb.Services
                     user.LockoutEnabled = false;
                     user.SecurityStamp = Guid.NewGuid().ToString();
 
-                    IdentityResult result = _userManager.CreateAsync(user, "663322C@io").Result;
+                    IdentityResult result = _userManager.CreateAsync(user, "T-Systems@").Result;
 
                     if (result.Succeeded)
                     {

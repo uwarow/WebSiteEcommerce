@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ETJTkNkpImGWlmaRFc4mVMaAvcUBVHKE5NSlGU77yumhblWB2TkpYo5/oA1cZntG+xzORPJWjt0MpHlgelC6yw==",
+  "dgSpecHash": "IvU+yORFr0aXtQ2i1ZAvZ1PeeuBC3UrOPQJy7wT9TC5Z/RZ2bHM7dgWvQonkUgFzqtSkbZYewpjYFJSnjndtqQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\fe657\\Source\\Repos\\LojaWeb1\\LojaWeb\\LojaWeb.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\fe657\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
     "C:\\Users\\fe657\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\fe657\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\fe657\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
@@ -193,5 +194,16 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'EntityFramework 6.1.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
